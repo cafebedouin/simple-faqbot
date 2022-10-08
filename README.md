@@ -35,24 +35,13 @@ DISCORD_TOKEN="<SECRET-BOT-TOKEN>"
 ### Launch
 
 ```python
-python3 _sigmabot.py
+python3 bot.py
 ```
 
 ### Help
 
 For a list of available commands send `.help` as a message in Discord or Telegram.
 
-## File Structure
-
-Source lives in the `main` folder with 3 types.
-
-* `_sigmabot.py`: exec and most likely won't need to change unless adding a new category
-* `*.py`: houses all the content and majority of the code for each category 
-* `ztemplate.py`: if there is a need for a new category then copy this file and follow instrutions on how to edit
-
-## Customization
-
-Developers can change config settings in the `_sigmabot.py` file.
 
 ### Prefix
 
