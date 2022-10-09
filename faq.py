@@ -1,16 +1,3 @@
-# WELCOME
-def faq_welcome():
-	df = """
-Ergopad is a token launch platform for the Ergo blockchain. Ergopad gives investors an opportunity to get in on the ground floor with Ergo tokens offered through an initial decentralized exchanged offering (IDO) . We help projects with our project launch and staking platform, provide developer expertise, and help projects get the resources they need.
-
-Useful links:
-Ergpad Website: For more information. <https://www.ergopad.io/>
-Ergopad Dashboard: Provides an overview of your wallet. <https://www.ergopad.io/dashboard>
-Ergopad FAQ: Frequently Asked Questions <https://www.ergopad.io/faq>
-Ergopad White Paper: Description of how Ergopad works. <https://www.ergopad.io/whitepaper>
-	"""
-	return(df)
-
 # BUYING
 def faq_buying(modifier=""):
 	if modifier=="ergo":
@@ -39,6 +26,27 @@ Ergopad tokens and tokens launched with Ergopad are available for purchase on Sp
 
 Modifiers: `ergo`, `ido`
 		"""
+	return(df)
+
+# CONSOLIDATE
+def faq_consolidate():
+	df = """
+Trouble staking, unstaking, redeeming or contributing? Please send the tokens or key(s), plus erg to yourself in one tx. This will consolidate the tokens & your erg into one utxo. Then retry your (un)stake/redeem/contribution tx. Let @theta_decay know if your tx does not work after consolidation. Thank you.
+	"""
+	return(df)
+
+# DATES
+def faq_dates():
+	df = """
+You will find relavant dates here: https://www.ergopad.io/projects
+	"""
+	return(df)
+
+# FEE 
+def faq_fee():
+	df = """
+Do you have enough erg for the tx fee? Having 0.3 erg or more in the same account is recommended.
+	"""
 	return(df)
 
 # PROBLEM
@@ -92,4 +100,17 @@ Pro-Tip: If you restore the same wallet into each service, you can use the same 
 
 Modifiers: `dis`, `reddit`, `tg`, `twitter`
 		"""
+	return(df)
+
+# WELCOME
+def faq_welcome():
+	df = """
+Ergopad is a token launch platform for the Ergo blockchain. Ergopad gives investors an opportunity to get in on the ground floor with Ergo tokens offered through an initial decentralized exchanged offering (IDO) . We help projects with our project launch and staking platform, provide developer expertise, and help projects get the resources they need.
+
+Useful links:
+Ergpad Website: For more information. <https://www.ergopad.io/>
+Ergopad Dashboard: Provides an overview of your wallet. <https://www.ergopad.io/dashboard>
+Ergopad FAQ: Frequently Asked Questions <https://www.ergopad.io/faq>
+Ergopad White Paper: Description of how Ergopad works. <https://www.ergopad.io/whitepaper>
+	"""
 	return(df)

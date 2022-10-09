@@ -26,17 +26,27 @@ async def on_ready():
 	print("Logged in as {0.user}".format(client))
 	await client.change_presence(activity=discord.Game("on the Rosen Bridge"))
 
-## WELCOME
-@client.command()
-async def welcome(ctx):
-	await ctx.send(fq.faq_welcome())
-
 ## BUYING
 @client.command()
 async def buying(ctx, modifier=""):
 	modifier = modifier.lower()
 	response = fq.faq_buying(modifier)
 	await ctx.send(response)
+
+## CONSOLIDATE
+@client.command()
+async def consolidate(ctx):
+	await ctx.send(fq.faq_consolidate())
+
+## DATES
+@client.command()
+async def dates(ctx):
+	await ctx.send(fq.faq_dates())
+
+## FEE
+@client.command()
+async def fee(ctx):
+	await ctx.send(fq.faq_fee())
 
 ## PROBLEM
 @client.command()
@@ -51,6 +61,11 @@ async def tipbot(ctx, modifier=""):
 	modifier = modifier.lower()
 	response = fq.faq_tipbot(modifier)
 	await ctx.send(response)
+
+## WELCOME
+@client.command()
+async def welcome(ctx):
+	await ctx.send(fq.faq_welcome())
 
 # EXECUTE
 client.run(TOKEN)
