@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  faqbot:
+    container_name: faqbot
+    env_file: 
+      - .env
+    build: .
+    restart: unless-stopped
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 5
+            max-size: 10m
+    # volumes: 
+    #  - ./app:/app
+    command: python3 bot.py
