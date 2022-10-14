@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  api:
+    container_name: api
+    env_file: 
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    logging:
+        driver: "json-file"
+        options:
+            max-file: 5
+            max-size: 10m
+    # volumes: 
+    #  - ./app:/app
+    command: python3 bot.py
