@@ -24,7 +24,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 @client.event
 async def on_ready():
 	print("Logged in as {0.user}".format(client))
-	await client.change_presence(activity=discord.Game("on the Rosen Bridge"))
+	await client.change_presence(activity=discord.Game("with decentralized tools"))
 
 ## BUYING
 @client.command()
