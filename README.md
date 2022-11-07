@@ -1,42 +1,25 @@
-# sigmabot
+# simple-faqbot
 
 ## Quick Start
 
-### Linux/Ubuntu
-
-```bash
-sudo apt install python3 python3-pip -y
-pip install discord python-dotenv
-```
-
-### Discord
+### Discord 
 
 Follow the instructions for creating a bot: https://discordpy.readthedocs.io/en/stable/discord.html
 
 When in the Bots tab of Applications, make sure to turn on the slider for all privileged Gateway Intents to test the bot.
 
-### bash
-
-#### add to `$HOME/.profile`:
+### Edit `.env` file with your bot token
 
 ```bash
-# set PATH so it includes user's local bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-```
+cp .env.template .env
+````
 
-#### create `$HOME/bin/sigmabot/main/.env` and add line:
+### Launch with Docker 
 
 ```bash
-DISCORD_TOKEN="<SECRET-BOT-TOKEN>"
-```
+docker-compose up -d
+````
 
-### Launch
-
-```python
-python3 bot.py
-```
 
 ### Help
 
@@ -49,7 +32,7 @@ For a list of available commands send `.help` as a message in Discord or Telegra
 
 ### Status
 
-`discord.Game()`: default is `on the Rosen Bridge`.
+`discord.Game()`: default is `with decentralized tools`.
 
 ## Contributing
 
@@ -60,3 +43,7 @@ The spaghetti code for this bot is held together by hope and a lot of bubble gum
 3. Commit your changes (`git commit -am "Add new stuff improvements"`)
 4. Push to branch (`git push origin feature/new-stuff`)
 5. Open a pull request
+
+
+
+
