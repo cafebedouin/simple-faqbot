@@ -13,6 +13,7 @@ def ergopad_about(modifier=""):
     else:
         df = """
         Projects that have launched on Ergopad can be found on the website: https://www.ergopad.io
+        Modifiers: `ergopad`, `paideia`
 		"""
     return(df)
 
